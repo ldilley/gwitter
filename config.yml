@@ -1,0 +1,33 @@
+# Hostname or IP address to use for connections
+# This can also be an IPv6 address.
+# Leave blank or comment out to use all interfaces.
+listen_host:
+
+# TCP port for incoming payloads
+listen_port: 5375
+
+# Determines whether or not Gwitter listens for payloads using HTTPS
+# This feature requires SSL certificates if set to 'true'.
+# Valid certificates can be generated using Let's Encrypt or another CA.
+# Generation can also be done using the following command as an example:
+# openssl req -x509 -nodes -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365
+use_ssl: false
+
+# GitHub webhook secret
+# This feature is typically desirable for increased security.
+# Leave blank or comment out to ignore payload validation.
+# Generate using the following command:
+# ruby -rsecurerandom -e 'puts SecureRandom.hex(20)'
+github_secret:
+
+# Twitter credentials
+# This requires an application be created at: https://apps.twitter.com/
+consumer_key:
+consumer_secret:
+access_token:
+access_secret:
+
+# Set this option to 'true' to enable debugging or 'false' to disable debugging.
+# This option should NOT be enabled on a production server since it may induce
+# a crash if certain exceptions are encountered!
+debug_mode: false
