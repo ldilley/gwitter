@@ -233,7 +233,7 @@ def tweet(message)
 
   # Truncate message if it exceeds limit
   if (message.length - link_limit) > TWEET_LIMIT
-    message = message[TWEET_LIMIT - link_limit]
+    message = message[0..(TWEET_LIMIT - link_limit)]
   end
 
   # Submit tweet
