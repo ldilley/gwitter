@@ -9,10 +9,8 @@ and Discord notifications. As such, only pull request/merge and release events a
 the needs of the aforementioned project. You will need to manually handle other specific event types that you want
 posted to Twitter as a result. Support for more events will likely be added for posterity at some point. For a
 list of available events supported by the GitHub API, please see the following:
-
-https://developer.github.com/webhooks/#events
-
-https://developer.github.com/v3/activity/events/types/
+* https://developer.github.com/webhooks/#events
+* https://developer.github.com/v3/activity/events/types/
 
 Gwitter requires the use of Twitter consumer and access tokens for authentication and authorization. These can
 be procured after creating a Twitter application at: https://apps.twitter.com/
