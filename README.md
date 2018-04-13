@@ -33,8 +33,6 @@ Note: If you are utilizing self-signed certificates, you must disable SSL verifi
 
 Gwitter has the following requirements:
 
-Ruby (including [JRuby](http://jruby.org/)) >=2.2
-
-[Sinatra Gem](https://github.com/sinatra/sinatra)
-
-[Twitter Gem](https://github.com/sferik/twitter)
+* Ruby (including [JRuby](http://jruby.org/)) >=2.2
+* [Sinatra Gem](https://github.com/sinatra/sinatra)
+* [Twitter Gem](https://github.com/sferik/twitter)
