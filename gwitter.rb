@@ -196,7 +196,7 @@ def handle_event push_event
       message += "#{release_url}\r\n"
       message += "#{release_body}"
     # Pull request (merge only)
-    when push_event.key?('pull_request') && push_event['action'] == 'closed' && push_event['pull_request']['merged'] == 'true'
+    when push_event.key?('pull_request') && push_event['action'] == 'closed' && push_event['pull_request']['merged'] == true
       pr_title = push_event['pull_request']['title']
       pr_url = push_event['pull_request']['html_url']
       pr_body = push_event['pull_request']['body']
